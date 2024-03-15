@@ -5,9 +5,9 @@ import (
 	"encoding/binary"
 	"os"
 	"time"
-	"github.com/amitbet/vncproxy/common"
-	"github.com/amitbet/vncproxy/logger"
-	"github.com/amitbet/vncproxy/server"
+	"github.com/adrianosela/vncproxy/common"
+	"github.com/adrianosela/vncproxy/logger"
+	"github.com/adrianosela/vncproxy/server"
 )
 
 type Recorder struct {

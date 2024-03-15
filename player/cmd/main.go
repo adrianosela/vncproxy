@@ -4,11 +4,11 @@ import (
 	"flag"
 	"fmt"
 	"os"
-	"github.com/amitbet/vncproxy/common"
-	"github.com/amitbet/vncproxy/encodings"
-	"github.com/amitbet/vncproxy/logger"
-	"github.com/amitbet/vncproxy/player"
-	"github.com/amitbet/vncproxy/server"
+	"github.com/adrianosela/vncproxy/common"
+	"github.com/adrianosela/vncproxy/encodings"
+	"github.com/adrianosela/vncproxy/logger"
+	"github.com/adrianosela/vncproxy/player"
+	"github.com/adrianosela/vncproxy/server"
 )
 
 func main() {
@@ -64,8 +64,8 @@ func main() {
 	}
 
 	cfg.NewConnHandler = func(cfg *server.ServerConfig, conn *server.ServerConn) error {
-		//fbs, err := loadFbsFile("/Users/amitbet/Dropbox/recording.rbs", conn)
-		//fbs, err := loadFbsFile("/Users/amitbet/vncRec/recording.rbs", conn)
+		//fbs, err := loadFbsFile("/Users/adrianosela/Dropbox/recording.rbs", conn)
+		//fbs, err := loadFbsFile("/Users/adrianosela/vncRec/recording.rbs", conn)
 		fbs, err := player.ConnectFbsFile(*fbsFile, conn)
 
 		if err != nil {

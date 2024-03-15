@@ -1,10 +1,10 @@
 package proxy
 
 import (
-	"github.com/amitbet/vncproxy/client"
-	"github.com/amitbet/vncproxy/common"
-	"github.com/amitbet/vncproxy/logger"
-	"github.com/amitbet/vncproxy/server"
+	"github.com/adrianosela/vncproxy/client"
+	"github.com/adrianosela/vncproxy/common"
+	"github.com/adrianosela/vncproxy/logger"
+	"github.com/adrianosela/vncproxy/server"
 )
 
 type ClientUpdater struct {

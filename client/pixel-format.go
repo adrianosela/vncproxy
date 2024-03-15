@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"encoding/binary"
 	"io"
-	"github.com/amitbet/vncproxy/common"
+	"github.com/adrianosela/vncproxy/common"
 )
 
 func readPixelFormat(r io.Reader, result *common.PixelFormat) error {

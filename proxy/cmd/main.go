@@ -5,8 +5,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/amitbet/vncproxy/logger"
-	vncproxy "github.com/amitbet/vncproxy/proxy"
+	"github.com/adrianosela/vncproxy/logger"
+	vncproxy "github.com/adrianosela/vncproxy/proxy"
 )
 
 func main() {

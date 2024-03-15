@@ -7,13 +7,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/amitbet/vncproxy/client"
-	"github.com/amitbet/vncproxy/common"
-	"github.com/amitbet/vncproxy/encodings"
-	"github.com/amitbet/vncproxy/logger"
-	"github.com/amitbet/vncproxy/player"
-	listeners "github.com/amitbet/vncproxy/recorder"
-	"github.com/amitbet/vncproxy/server"
+	"github.com/adrianosela/vncproxy/client"
+	"github.com/adrianosela/vncproxy/common"
+	"github.com/adrianosela/vncproxy/encodings"
+	"github.com/adrianosela/vncproxy/logger"
+	"github.com/adrianosela/vncproxy/player"
+	listeners "github.com/adrianosela/vncproxy/recorder"
+	"github.com/adrianosela/vncproxy/server"
 )
 
 type VncProxy struct {

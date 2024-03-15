@@ -4,10 +4,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/amitbet/vncproxy/common"
-	"github.com/amitbet/vncproxy/encodings"
-	"github.com/amitbet/vncproxy/logger"
-	"github.com/amitbet/vncproxy/server"
+	"github.com/adrianosela/vncproxy/common"
+	"github.com/adrianosela/vncproxy/encodings"
+	"github.com/adrianosela/vncproxy/logger"
+	"github.com/adrianosela/vncproxy/server"
 )
 
 func TestServer(t *testing.T) {
@@ -41,9 +41,9 @@ func TestServer(t *testing.T) {
 	}
 
 	cfg.NewConnHandler = func(cfg *server.ServerConfig, conn *server.ServerConn) error {
-		//fbs, err := loadFbsFile("/Users/amitbet/Dropbox/recording.rbs", conn)
-		//fbs, err := loadFbsFile("/Users/amitbet/vncRec/recording.rbs", conn)
-		fbs, err := ConnectFbsFile("/Users/amitbet/vncRec/recording.rbs", conn)
+		//fbs, err := loadFbsFile("/Users/adrianosela/Dropbox/recording.rbs", conn)
+		//fbs, err := loadFbsFile("/Users/adrianosela/vncRec/recording.rbs", conn)
+		fbs, err := ConnectFbsFile("/Users/adrianosela/vncRec/recording.rbs", conn)
 
 		if err != nil {
 			logger.Error("TestServer.NewConnHandler: Error in loading FBS: ", err)

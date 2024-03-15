@@ -5,7 +5,7 @@ import (
 	"log"
 	"net"
 
-	"github.com/amitbet/vncproxy/common"
+	"github.com/adrianosela/vncproxy/common"
 )
 
 var DefaultClientMessages = []common.ClientMessage{

@@ -1,4 +1,4 @@
-# VncProxy [![CircleCI](https://circleci.com/gh/amitbet/vncproxy/tree/master.svg?style=shield)](https://circleci.com/gh/amitbet/vncproxy/tree/master) [![MIT Licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/CircleCI-Public/circleci-demo-go/master/LICENSE.md)
+# VncProxy [![CircleCI](https://circleci.com/gh/adrianosela/vncproxy/tree/master.svg?style=shield)](https://circleci.com/gh/adrianosela/vncproxy/tree/master) [![MIT Licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/CircleCI-Public/circleci-demo-go/master/LICENSE.md)
 
 An RFB proxy, written in go that can save and replay FBS files
 * Supports all modern encodings & most useful pseudo-encodings
@@ -42,7 +42,7 @@ An RFB proxy, written in go that can save and replay FBS files
 
 ## **Architecture**
 
-![Image of Arch](https://github.com/amitbet/vncproxy/blob/master/architecture/proxy-arch.png?raw=true)
+![Image of Arch](https://github.com/adrianosela/vncproxy/blob/master/architecture/proxy-arch.png?raw=true)
 
 Communication to vnc-server & vnc-client are done in the RFB binary protocol in the standard ways.
 Internal communication inside the proxy is done by listeners (a pub-sub system) that provide a stream of bytes, parsed by delimiters which provide information about RFB message start & type / rectangle start / communication closed, etc.
@@ -61,6 +61,6 @@ This listener system was chosen over direct use of channels, since it allows the
 The Recorder uses channels and runs in parallel to avoid hampering the communication through the proxy.
 
 
-![Image of Arch](https://github.com/amitbet/vncproxy/blob/master/architecture/player-arch.png?raw=true)
+![Image of Arch](https://github.com/adrianosela/vncproxy/blob/master/architecture/player-arch.png?raw=true)
 
 The code is based on several implementations of go-vnc including the original one by *Mitchell Hashimoto*, and the recentely active fork by *Vasiliy Tolstov*.

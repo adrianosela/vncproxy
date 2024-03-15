@@ -5,10 +5,10 @@ import (
 
 	"io"
 	"time"
-	"github.com/amitbet/vncproxy/client"
-	"github.com/amitbet/vncproxy/common"
-	"github.com/amitbet/vncproxy/logger"
-	"github.com/amitbet/vncproxy/server"
+	"github.com/adrianosela/vncproxy/client"
+	"github.com/adrianosela/vncproxy/common"
+	"github.com/adrianosela/vncproxy/logger"
+	"github.com/adrianosela/vncproxy/server"
 )
 
 type VncStreamFileReader interface {
@@ -33,7 +33,7 @@ func ConnectFbsFile(filename string, conn *server.ServerConn) (*FbsReader, error
 		logger.Error("failed to open fbs reader:", err)
 		return nil, err
 	}
-	//NewFbsReader("/Users/amitbet/vncRec/recording.rbs")
+	//NewFbsReader("/Users/adrianosela/vncRec/recording.rbs")
 	initMsg, err := fbs.ReadStartSession()
 	if err != nil {
 		logger.Error("failed to open read fbs start session:", err)

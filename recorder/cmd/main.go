@@ -5,11 +5,11 @@ import (
 	"net"
 	"os"
 	"time"
-	"github.com/amitbet/vncproxy/client"
-	"github.com/amitbet/vncproxy/common"
-	"github.com/amitbet/vncproxy/encodings"
-	"github.com/amitbet/vncproxy/logger"
-	"github.com/amitbet/vncproxy/recorder"
+	"github.com/adrianosela/vncproxy/client"
+	"github.com/adrianosela/vncproxy/common"
+	"github.com/adrianosela/vncproxy/encodings"
+	"github.com/adrianosela/vncproxy/logger"
+	"github.com/adrianosela/vncproxy/recorder"
 )
 
 func main() {
@@ -58,7 +58,7 @@ func main() {
 	//vncSrvMessagesChan := make(chan common.ServerMessage)
 
 	//rec, err := recorder.NewRecorder("c:/Users/betzalel/recording.rbs")
-	rec, err := recorder.NewRecorder(*recordDir) //"/Users/amitbet/vncRec/recording.rbs")
+	rec, err := recorder.NewRecorder(*recordDir) //"/Users/adrianosela/vncRec/recording.rbs")
 	if err != nil {
 		logger.Errorf("error creating recorder: %s", err)
 		return

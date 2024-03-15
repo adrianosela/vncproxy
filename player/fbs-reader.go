@@ -5,9 +5,9 @@ import (
 	"encoding/binary"
 	"io"
 	"os"
-	"github.com/amitbet/vncproxy/common"
-	"github.com/amitbet/vncproxy/encodings"
-	"github.com/amitbet/vncproxy/logger"
+	"github.com/adrianosela/vncproxy/common"
+	"github.com/adrianosela/vncproxy/encodings"
+	"github.com/adrianosela/vncproxy/logger"
 )
 
 type FbsReader struct {
